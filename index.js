@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
     
     
@@ -14,7 +15,22 @@ function nowServing(katzDeliLine) {
   }
 }
 
+function currentLine(katzDeliLine){
+  var items = "";
+  if(katzDeliLine.length > 0){
+  for(var i = 0; i < katzDeliLine.length; i++){
+    items += `${i+1}. ${katzDeliLine[i]}, `;
+    
+  }
+    items = output.slice(0, output.length - 2);
+      return `The line is currently: ${output}`;
+  }else{
+  return `The line is currently empty.`;
+  }
+}
 
+
+/*
 function currentLine(katzDeliLine){
   var output = [];
   if(katzDeliLine.length > 0){
@@ -27,13 +43,6 @@ function currentLine(katzDeliLine){
   }else{
   return `The line is currently empty.`;
   }
-}
+}*/
 
 
-
-
-
-
-    
-    
-    
